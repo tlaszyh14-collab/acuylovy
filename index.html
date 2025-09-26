@@ -37,10 +37,20 @@
       max-width: 600px;
       max-height: 80vh;    /* ✨ biar bisa scroll */
       overflow-y: auto;    /* ✨ scroll hanya di card */
-      text-align: center;
       animation: fadeIn 1.5s ease;
       z-index: 10;
       position: relative;
+    }
+
+    /* teks dalam card rata kanan-kiri + indentasi */
+    .card .message p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* mulai paragraf kedua dst diberi indentasi */
+    .card .message p + p {
+      text-indent: 2em;
     }
 
     #music-btn {
